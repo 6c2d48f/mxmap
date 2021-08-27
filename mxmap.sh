@@ -10,7 +10,7 @@ if [[ "$1" =~ ^[a-zA-Z0-9.]*[a-zA-Z0-9]{0,62}$ ]];then
 	done
 	echo "Query to the post office server domain name:  ${servers[*]}"
 	nmap ${servers[*]} ${*:2:$#}
-elif [[ "$1" =~ ^-(h|-help)$ ]];then
+elif [[ "$1" =~ ^(|-(h|-help))$ ]];then
 	echo "Usage:  mxmap domain [Options]"
 	echo "Where:  domain	  is in the Domain Name System"
 	echo "Use \"nmap --help\" for complete list of options"
