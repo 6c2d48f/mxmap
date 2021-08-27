@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 count=0
-if [[ "$1" =~ ^[a-zA-Z0-9.]*\.?[a-zA-Z0-9]{0,62}$ ]];then
+if [[ "$1" =~ ^[a-zA-Z0-9.]*[a-zA-Z0-9]{0,62}$ ]];then
 	for line in $(dig -t mx +short $1)
 	do
 		if ((count%2));then
