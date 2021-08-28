@@ -17,7 +17,7 @@ elif [[ "$1" =~ ^(|-(h|-help))$ ]];then
 	echo "Where:  domain	  is in the Domain Name System"
 	echo "Options:"
 	echo "	--noscan	No scanning of post office servers"
-	echo "Use \"nmap --help\" for complete list of options"
+	echo "Use \"nmap --help\" for a more extensive list of options"
 else
 	echo "Error: Illegal parameters!"
 	exit 1
